@@ -2,9 +2,8 @@
   "name": "hello_world",
   "version": "1.0.0",
   "description": "hello world sample for NodeJS",
-  "main": "app.js",
   "repository": "https://github.com/awslabs/aws-sam-cli/tree/develop/samcli/local/init/templates/cookiecutter-aws-sam-hello-nodejs",
-  "author": "SAM CLI",
+  "author": "Pedro",
   "license": "MIT",
   "scripts": {
     "unit": "jest",

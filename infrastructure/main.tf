@@ -41,7 +41,7 @@ resource "aws_iam_role" "iam_for_lambda" {
 
 data "archive_file" "zip_ts" {
   type        = "zip"
-  source_dir  = "${path.module}/../src/lambda/"
+  source_dir  = "${path.module}/../dist/lambda/"
   output_path = "${path.module}/../target/nodejs.zip"
 }
 
@@ -52,6 +52,6 @@ resource "aws_lambda_function" "lambda" {
   source_code_hash = data.archive_file.zip_ts.output_base64sha256
 
   role    = aws_iam_role.iam_for_lambda.arn
-  handler = "hello.lambdaHandler"
+  handler = "hello.handler"
   runtime = "nodejs16.x"
 }
