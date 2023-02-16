@@ -17,3 +17,8 @@ https://docs.aws.amazon.com/lambda/latest/dg/typescript-handler.html
 Terraform Documentation for setting up IaC
 
 https://developer.hashicorp.com/terraform/tutorials/aws/lambda-api-gateway
+
+Handy, if not feature-rich boilerplate from which I understood the workings of the transpiling and its configuration.
+The Terraform configuration here is very in-depth.
+
+https://github.com/aashari/boilerplate-lambda-typescript/blob/main/main.tf
