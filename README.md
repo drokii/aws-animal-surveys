@@ -22,3 +22,7 @@ Handy, if not feature-rich boilerplate from which I understood the workings of t
 The Terraform configuration here is very in-depth.
 
 https://github.com/aashari/boilerplate-lambda-typescript/blob/main/main.tf
+
+Ways to create policies in terraform:
+
+https://lepczynski.it/en/aws_en/how-to-create-iam-policy-and-iam-role-in-terraform-3-ways-2022/
