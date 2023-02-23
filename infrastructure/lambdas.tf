@@ -1,5 +1,12 @@
+resource "null_resource" "run_compile"{
+  provisioner "local-exec" {
+    working_dir = "${path.module}/../"
+    command ="npm run compile"
+  }
+}
 
 data "archive_file" "zip_ts" {
+  depends_on = [null_resource.run_compile]
   type        = "zip"
   source_dir  = "${path.module}/../dist/lambda/hello"
   output_path = "${path.module}/../dist/nodejs.zip"
